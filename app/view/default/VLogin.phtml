@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<?php
+	include_once("box/header.phtml");
+?>
+</head>
+<body id="<?php echo $this->cname;?>">
+<?php
+	include_once 'box/top_nav.phtml';
+?>
+<div class="mainCt">
+	<div class="content">
+		<div id="loginArea">
+			<div><h3>Login</h3></div>
+			<div style="overflow: hidden;">
+				<form action="<?php echo $this->request;?>auth/loginUser" method="post" id="LoginUser" name="LoginUser">
+					<table class="login-table">
+						<tr>
+							<td>Username:</td>
+							<td><input type="text" id="Username" name="Username" class="text-input" /></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" id="Password" name="Password" class="text-input" /></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" value="Autentificare" class="sendBtn" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="msg" id="msgLoginUser">
+					    		Atentie ! Zona monitorizata intens.</span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<div style="margin-top: 10px;">
+									<div class="l">
+										<a href="<?php echo $this->openPage('register');?>">Cont nou</a>
+									</div>
+									<div class="r">
+										<a href="<?php echo $this->openPage('recover');?>">Mi-am uitat parola</a>
+									</div>
+									<div class="clr"></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<?php
+	include_once("box/footer.phtml");
+?>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	var req = request = '<?php echo $this->request;?>';
+	var cname = '<?php echo $this->cname;?>';
+	var web_path = '<?php echo WEB_PATH;?>';
+	var _indexRoute = '<?php echo $this->getRouteIndex();?>';
+	var AppClient = <?php echo json_encode($this->getAppClient());?>;
+	var system_lang = '<?php echo $this->getSetting('system_lang'); ?>';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write("<script src='<?php echo WEB_ROOT;?>js/lib/jquery-1.10.2.min.js'>\x3C/script>")</script>
+<script src="<?php echo WEB_ROOT; ?>js/lib/jquery.json-2.4.min.js"></script>
+<script src="<?php echo WEB_ROOT; ?>js/lib/jquery.form.min.js"></script>
+<script src="<?php echo WEB_ROOT; ?>js/extend/submiter.js"></script>
+
+<script src="<?php echo WEB_ROOT; ?>js/extend/tools.js"></script>
+<script src="<?php echo WEB_ROOT; ?>js/extend/bootstrap.js"></script>
+<script src="<?php echo WEB_ROOT; ?>js/extend/dependency.js"></script>
+
+<!--<script src="<?php /*echo WEB_ROOT; */?>js/extend/tabs.js"></script>
+<script src="<?php /*echo WEB_ROOT; */?>js/extend/dd.js"></script>
+<script src="<?php /*echo WEB_ROOT; */?>js/extend/win.js"></script>-->
+
+<script src="<?php echo WEB_ROOT; ?>js/app.js"></script>
+
+<?php
+$noCache = '';//'?'.time();
+$jsFiles = $this->jsFiles;
+	if(count($jsFiles)>0):
+		foreach ($jsFiles as $jFiles):
+			$jFiles = WEB_ROOT . $jFiles;
+?>
+			<script type="text/javascript" src="<?php echo $jFiles; ?>.js<?php echo $noCache;?>" ></script>
+		<?php endforeach; endif; ?>

@@ -1,0 +1,45 @@
+<br />
+Database generator tool: <hr />
+<?php
+	$dbo = false;
+	if(!empty($this->files)){
+?>
+	<h2>Files to run:</h2><br />
+<?php
+		foreach($this->files as $file){
+			echo ' - ' . $file . "<br />";
+		}
+	}else{
+		$dbo = true;
+		echo '<h2>There are no sql files to run !</h2>';
+	}
+?>
+<br />
+<form action="<?php echo $this->request;?>db" method="post" id="DbForm" name="DbForm">
+<?php if($this->dbExist()){	?>
+	<input type="checkbox" name="dbo" id="dbo" value="1" <?php echo $dbo ? 'checked="checked" disabled="disabled"' : ''; ?>> <label for="dbo">Create DBO Classes.</label>
+<?php } ?>
+	<input type="hidden" name="files" value="<?php echo count($this->files);?>" />
+	<br />
+	<input type="submit" value="Run Generator" />
+	<br />
+	<span class="msg" id="msgDbForm">
+		<ul style="list-style: circle;padding: 20px;">
+			<?php
+				if(!$dbo){
+			?>
+			<li>
+				DB Generator will backup your existing data base.
+			</li>
+			<li>
+				To only import data, do not check DBO Classes.
+			</li>
+			<?php
+				}
+			?>
+			<li>
+				If DBO is check it will re-create DBO objects.
+			</li>
+		</ul>
+	</span>
+</form>

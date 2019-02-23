@@ -1,0 +1,52 @@
+CategoryID,Name,ParentID,FamilyID
+1,cheltuieli,NULL,NULL
+2,venituri,NULL,NULL
+3,Masina,1,NULL
+4,Casa,1,NULL
+5,Mancare,1,NULL
+6,Facturi,1,NULL
+7,Educatie,1,NULL
+8,Sport,1,NULL
+9,Rate Banci,1,NULL
+10,Firma (I.I.),1,NULL
+11,Personal (Membrii),1,NULL
+12,Sanatare,1,NULL
+13,Alta Cheltuiala,1,NULL
+14,Benzina,3,NULL
+15,Consumabile,3,NULL
+16,Asigurare,3,NULL
+17,Rovigneta,3,NULL
+18,Amenda,3,NULL
+19,Consumabile,4,NULL
+20,Achizitii,4,NULL
+21,Impozite si taxe,4,NULL
+22,Mancare servici,5,NULL
+23,Mancare acasa,5,NULL
+24,Mancare oras,5,NULL
+25,Intretinere,6,NULL
+26,Avon,6,NULL
+27,Cosmote,6,NULL
+28,Gaz,6,NULL
+29,Curent,6,NULL
+30,Internet,6,NULL
+31,Orange,6,NULL
+32,Vodafone,6,NULL
+33,Gradinita,7,NULL
+34,Pregatire engleza,7,NULL
+35,Tenis,8,NULL
+36,BRD,9,NULL
+37,Transilvania,9,NULL
+38,Impozite si taxe,10,NULL
+39,Contributie pensie privata,10,NULL
+40,Florin,11,NULL
+41,Andreea,11,NULL
+42,Cosmin,11,NULL
+43,Medicamente,12,NULL
+44,Orice alta cheltuiala,13,NULL
+45,Acordare imprumut,13,NULL
+46,Salarii,2,NULL
+47,Alocatii,2,NULL
+48,Indemnizatii/Somaj,2,NULL
+49,Proiecte Extra,2,NULL
+50,Vanzare de bunuri,2,NULL
+51,Recuperare imprumut,2,NULL

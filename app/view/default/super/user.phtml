@@ -1,0 +1,24 @@
+<br />
+<div class="l">
+    <?php
+        $i = 0;
+        if($this->famInactive){
+        foreach($this->famInactive as $fam){
+            $name = 'fam-' . $i;
+            ?>
+            <form action="<?php echo $this->request;?>user/" method="post" name="<?php echo $name;?>" id="<?php echo $name;?>">
+                <input type="hidden" name="FamilyID" value="<?php echo $fam->FamilyID;?>" />
+                fam. <?php echo $fam->Name; ?>&nbsp;<input type="submit" value="Activeaza" />
+                <br />
+            </form>
+    <?php
+            $i++;
+        }
+    }else{
+        echo "nu sunt useri de activat.";
+    }
+    ?>
+</div>
+<div class="l"></div>
+
+<div class="clr"></div>

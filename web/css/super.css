@@ -1,0 +1,20 @@
+
+#super .menu{
+    margin:0; padding:0; width:230px; list-style:none;background:#fff;
+}
+#super .menu li{
+    padding:0; margin:0 0 1px 0; height: 30px; display:block;
+}
+#super .menu li a{
+    text-align:left;height:30px; padding:0px 15px; display:block;
+    background-color: #F5F5F5;
+    text-decoration:none;
+    border: 1px solid #EEEEEE;
+}
+#super .menu li a:hover{
+    background-color: #fff;
+}
+#super .menu li a.active, #super .menu li a.active:hover{
+    background-color: #FAFAFA;
+}
+#super .menu li a span{line-height:30px;}

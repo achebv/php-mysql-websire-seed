@@ -1,0 +1,42 @@
+<div class="header">
+	<div class="content rel">
+		<a class="logo" href="<?php $this->openPage('Super', 0, true);?>">&nbsp;</a>
+		<div class="user_box">
+		<?php
+			if($this->auth->IsSuper()){
+		?>
+			<a href="<?php echo $this->openPage($this->cname, 0, true);?>db/">Baza de date</a>
+			|
+			<a href="<?php echo $this->openPage($this->cname, 0, true);?>auth/logoutSuper/">logout</a>
+		<?php
+			}
+		?>
+		</div>
+	</div>
+</div>
+
+<div class="nav">
+	<div class="content">
+	<?php
+		if($this->auth->IsSuper()){
+	?>
+		<ul>
+			<li class="active">
+				<a href="<?php echo $this->openPage($this->cname, 0, true);?>dashboard/">
+					<span class="dashboard"></span>
+					<span>Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="<?php echo $this->openPage($this->cname, 0, true);?>user/">
+					<span class="user"></span>
+					<span>Utilizatori</span>
+				</a>
+			</li>
+		</ul>
+	<?php
+		}
+	?>
+		<div class="clr"></div>
+	</div>
+</div>

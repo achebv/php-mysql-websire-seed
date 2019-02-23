@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `city` (
+  `CityID` int(11) NOT NULL AUTO_INCREMENT,
+  `CountyID` int(11) DEFAULT NULL,
+  `Long` varchar(20) DEFAULT NULL,
+  `Lat` varchar(20) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`CityID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

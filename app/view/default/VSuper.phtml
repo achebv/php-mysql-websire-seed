@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<?php
+	include_once("box/header.phtml");
+?>
+</head>
+<body id="<?php echo $this->cname;?>" class='default'>
+<?php
+	include_once $this->cname . '/_nav.phtml';
+?>
+<div class="mainCt">
+	<div class="content">
+		<?php
+			if(!$this->dbExist() && $this->renderBox!='login'){
+				echo '<br /><h1>There is no database. Please run create db (001_db_create.sql) script.</h1><hr />';
+			}
+			include_once $this->cname . '/' . $this->renderBox . '.phtml';
+		?>
+	</div>
+</div>
+<?php
+		include_once("box/footer.phtml");
+	?>
+
+</body>
+</html>

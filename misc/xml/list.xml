@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lists>
+    <!--<list name="Judete" key="county"></list>
+    <list name="Orase" key="city" group="county"></list>-->
+    <list name="Sex" key="gender"></list>
+</lists>

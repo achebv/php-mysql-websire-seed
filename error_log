@@ -1,0 +1,48 @@
+[25-Jan-2015 17:59:00 Europe/Helsinki] PHP Fatal error:  Class 'AReport' not found in /home/extjs/_budget/ds/core/Registry.php on line 356
+[25-Jan-2015 19:52:03 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[25-Jan-2015 19:52:03 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[25-Jan-2015 19:52:03 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[25-Jan-2015 19:53:02 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[25-Jan-2015 19:53:02 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[25-Jan-2015 19:53:02 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[25-Jan-2015 19:53:21 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[25-Jan-2015 19:53:21 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[25-Jan-2015 19:53:21 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[25-Jan-2015 19:53:48 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[25-Jan-2015 19:53:48 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[25-Jan-2015 19:53:48 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[25-Jan-2015 21:26:48 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:26:52 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:28:00 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:28:23 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:28:37 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:28:57 Europe/Helsinki] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find Total in DboCategory. Please fix it!' in /home/extjs/_budget/ds/core in /home/extjs/_budget/ds/core/model/ModelActiveRecord.php on line 334
+[25-Jan-2015 21:29:28 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BOutcome.php on line 40
+[25-Jan-2015 21:29:45 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BOutcome.php on line 41
+[25-Jan-2015 21:32:59 Europe/Helsinki] PHP Parse error:  syntax error, unexpected 'FORMAT' (T_STRING) in /home/extjs/_budget/ds/app/bl/BOutcome.php on line 49
+[25-Jan-2015 21:33:43 Europe/Helsinki] PHP Parse error:  syntax error, unexpected '=' in /home/extjs/_budget/ds/app/bl/BOutcome.php on line 53
+[26-Jan-2015 13:26:39 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[26-Jan-2015 14:38:11 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:38:34 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:38:35 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:38:48 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:38:49 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:40:07 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:40:16 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 14:40:16 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 77
+[26-Jan-2015 15:07:01 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[26-Jan-2015 15:07:29 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 62
+[26-Jan-2015 15:07:40 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[26-Jan-2015 15:08:36 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[29-Jan-2015 09:51:45 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[03-Feb-2015 03:09:47 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BCategory.php on line 95
+[13-Mar-2015 11:55:58 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[13-Mar-2015 11:55:58 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[13-Mar-2015 11:55:58 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[13-Mar-2015 11:56:00 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[13-Mar-2015 11:56:00 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[13-Mar-2015 11:56:00 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[13-Mar-2015 11:56:02 Europe/Helsinki] PHP Notice:  Undefined index: data in /home/extjs/_budget/ds/app/bl/BBase.php on line 31
+[13-Mar-2015 11:56:02 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 32
+[13-Mar-2015 11:56:02 Europe/Helsinki] PHP Notice:  Trying to get property of non-object in /home/extjs/_budget/ds/app/bl/BBase.php on line 21
+[13-Mar-2015 11:56:02 Europe/Helsinki] PHP Warning:  Invalid argument supplied for foreach() in /home/extjs/_budget/ds/app/bl/BBase.php on line 58

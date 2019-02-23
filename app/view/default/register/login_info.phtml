@@ -1,0 +1,25 @@
+<br />
+<?php echo $this->getDictio("myAccount.NewAccount.TabLoginData.Information");?>
+<hr />
+
+<br />
+<div class="formRow">
+	<label for="Email">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabLoginData.Email");?></span>:</label>
+	<input id="Email" type="text" name="Email"/>
+</div>
+
+<div class="formRow">
+	<label for="Password">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabLoginData.Password");?></span>:</label>
+	<input id="Password" type="password" name="Password"/>		
+</div>
+
+<div class="formRow">
+	<label for="Password2">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabLoginData.ConfirmPassword");?></span>:</label>
+	<input id="Password2" type="password" name="Password2"/>
+</div>
+<div class="formRow">
+    <label>&nbsp;</label>
+    <input type="button" value="<?php echo $this->getDictio("myAccount.NewAccount.NextStep");?>" class="nextButton" id="nextButtonInfo" />
+</div>
+
+

@@ -1,0 +1,11 @@
+ul.modal li input[name^=modals] {display:none !important;filter:alpha(opacity=0);width:0;margin:0 -5px;}
+
+.overlay.x-hidden {display:none;}
+.modal .overlay {
+	background:none !important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99482B77,endColorstr=#99482B77);
+	/*padding:0 25px;*/
+}
+
+.preview .modal .overlay {background:none;filter:none;}
+.modal .overlay .content {zoom:1;}

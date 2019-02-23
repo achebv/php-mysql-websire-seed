@@ -1,0 +1,70 @@
+
+html, body{
+	margin: 0px;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+/**
+ * custom
+ */
+.x-hidden{
+	display: none;
+}
+
+.l, .left{
+	float: left;
+}
+
+.r, .right{
+	float: right;
+}
+
+.clr, .clear{
+	clear: both;
+}
+
+.abs, .absolute{
+	position: absolute;
+}
+
+.rel, .relative{
+	position: relative;
+}
+
+.block{
+	display: block;
+}
+
+/**
+ *	content and layout
+ */
+
+.main{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.pull-right
+{
+	display:inline;
+	float:right;
+}
+
+.pull-left
+{
+	display:inline;
+}
+
+.center{
+	align:center;
+}
+
+.rel{
+	position: relative;
+}
+
+

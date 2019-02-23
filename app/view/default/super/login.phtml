@@ -1,0 +1,26 @@
+<div id="loginArea">
+    <div><h3>Login</h3></div>
+    <div style="overflow: hidden;">
+        <form action="<?php echo $this->request;?>auth/loginSuper" method="post" id="LoginSuper" name="LoginSuper">
+            <table class="login-table">
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" id="Username" name="Username" class="text-input" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="Password" name="Password" class="text-input" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Autentificare" class="sendBtn" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span class="msg" id="msgLoginSuper">
+					    Atentie ! Zona monitorizata intens.</span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

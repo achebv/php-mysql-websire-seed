@@ -1,0 +1,52 @@
+<br />
+<?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.Information");?>
+<hr />
+
+<div class="formRow">
+	<label for="FirstName">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.FirstName");?></span>:</label>
+	<input id="FirstName" type="text" name="FirstName"/>		
+</div>
+
+<div class="formRow">
+	<label for="LastName">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.LastName");?></span>:</label>
+	<input id="LastName" type="text" name="LastName"/>		
+</div>
+
+<div class="formRow">
+	<label for="Sex"><span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.Gender");?></span>:</label>
+	<select id="Sex" name="Sex">
+		<option value="1" selected><?php echo $this->getDictio("Male");?></option>
+		<option value="0"><?php echo $this->getDictio("Female");?></option>
+	</select>
+</div>
+
+<div class="formRow">
+    <label for="Dob"><span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.Birthday");?></span>:</label>
+    <div id='Dob'></div>
+</div>
+
+<div class="formRow">
+	<label for="MobilePhone">*<span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.Phone");?></span>:</label>
+	<input id="MobilePhone" type="text" name="MobilePhone"/>		
+</div>
+
+<!--<div class="formRow">
+    <label for="County"><span><?php /*echo $this->getDictio("myAccount.NewAccount.TabPersonalData.County");*/?></span>:</label>
+    <input id="County" type="text" name="County" autocomplete="off"/>
+</div>
+
+<div class="formRow">
+    <label for="City"><span><?php /*echo $this->getDictio("myAccount.NewAccount.TabPersonalData.City");*/?></span>:</label>
+    <input id="City" type="text" name="City" autocomplete="off"/>
+</div>-->
+
+<!--<div class="formRow">
+	<label for="Country"><span><?php /*echo $this->getDictio("myAccount.NewAccount.TabPersonalData.Country");*/?></span>:</label>
+	<input id="Country" type="text" name="Country" autocomplete="off"/>		
+</div>-->
+
+<div class="formRow">
+    <label>&nbsp;</label>
+    <input type="button" value="<?php echo $this->getDictio("myAccount.NewAccount.PreviousStep");?>" class="previousButton" id="previousButtonInfo" />
+    <input type="button" value="<?php echo $this->getDictio("myAccount.NewAccount.NextStep");?>" class="nextButton" id="nextButtonInfo2" />
+</div>

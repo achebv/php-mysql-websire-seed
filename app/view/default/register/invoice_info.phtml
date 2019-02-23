@@ -1,0 +1,183 @@
+<?php
+    $companyTypes = $this->readXmlList('companyTypes','companyType');
+    $billTypes = $this->readXmlList('billTypes','billType');
+    $plans = $this->readXmlList('companyPlans','companyPlan');
+?>
+<br />
+<?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Information");?>
+<hr />
+
+<div class="formRow">
+    <label for="CompanyType"><span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.CompanyPlan");?></span>:</label>
+    <select id="PlanID" name="PlanID">
+        <?php
+        foreach($plans as $key => $value) {
+            $s = (($key==$this->accType) ? " selected='selected' " : '');
+            echo "<option value='".$key."' ".$s.">". $this->getDictio('ServicePlan.'.$value) ."</option>   ";
+        }
+        ?>
+    </select>
+</div>
+
+<div class="formRow">
+    <label for="CompanyType"><span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.ClientType");?></span>:</label>
+    <select id="CompanyType" name="CompanyType">
+        <?php
+        foreach($companyTypes as $key => $value) {
+            echo "<option value='".$key."'>". $this->getDictio($value) ."</option>   ";
+        }
+        ?>
+    </select>
+</div>
+
+<div class="formRow">
+    <label for="InvoiceType"><span><?php echo $this->getDictio("myAccount.NewAccount.TabPersonalData.InvoiceType");?></span>:</label>
+    <select id="InvoiceType" name="InvoiceType" onchange="MyAccount.changeRegisterStep3Form()">
+        <?php
+        foreach($billTypes as $key => $value) {
+            echo "<option value='".$key."'>". $this->getDictio($value) ."</option>   ";
+        }
+        ?>
+    </select>
+</div>
+
+<div id="FType" class="	x-hidden">
+
+	<div class="first-part">
+		<div class="formRow">
+			<label for="FFirstName"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.FirstName");?></span>:</label>
+			<input id="FFirstName" type="text" name="FFirstName"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FLastName"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.LastName");?></span>:</label>
+			<input id="FLastName" type="text" name="FLastName" />		
+		</div>
+		
+		<div class="formRow x-hidden">
+			<label for="FCNP"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.CNP");?></span>:</label>
+			<input id="FCNP" type="text" name="FCNP"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FCountry"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Country");?></span>:</label>
+			<input id="FCountry" type="text" name="FCountry" autocomplete="off"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FState"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.State");?></span>:</label>
+			<input id="FState" type="text" name="FState"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FTown"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Town");?></span>:</label>
+			<input id="FTown" type="text" name="FTown"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FAddress"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Address");?></span>:</label>
+			<input id="FAddress" type="text" name="FAddress"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FPostalCode"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.PostalCode");?></span>:</label>
+			<input id="FPostalCode" type="text" name="FPostalCode"/>		
+		</div>
+	</div>
+	<div class="second-part">
+		<div class="formRow">
+			<label for="FPhone"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Phone");?></span>:</label>
+			<input id="FPhone" type="text" name="FPhone"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="FEmail"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Email");?></span>:</label>
+			<input id="FEmail" type="text" name="FEmail"/>		
+		</div>
+	</div>
+</div>
+					
+<div id="JType" class="">
+	<div class="first-part">
+		<div class="formRow">
+			<label for="JCompany"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.CompanyName");?></span>:</label>
+			<input id="JCompany" type="text" name="JCompany"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JCountry"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Country");?></span>:</label>
+			<input id="JCountry" type="text" name="JCountry"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JState"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.State");?></span>:</label>
+			<input id="JState" type="text" name="JState"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JTown"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Town");?></span>:</label>
+			<input id="JTown" type="text" name="JTown"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JAddress"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Address");?></span>:</label>
+			<input id="JAddress" type="text" name="JAddress"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JPostalCode"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.PostalCode");?></span>:</label>
+			<input id="JPostalCode" type="text" name="JPostalCode"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JPhone"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Phone");?></span>:</label>
+			<input id="JPhone" type="text" name="JPhone"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JEmail"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Email");?></span>:</label>
+			<input id="JEmail" type="text" name="JEmail"/>		
+		</div>
+	</div>
+	<div class="second-part">
+		<div class="formRow">
+			<label for="JCodBancar"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.BankCode");?></span>:</label>
+			<input id="JCodBancar" type="text" name="JCodBancar"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JNumeBanca"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.BankName");?></span>, Filiala:</label>
+			<input id="JNumeBanca" type="text" name="JNumeBanca"/>		
+		</div>
+		
+		<div class="formRow">
+			<label for="JNrRC"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.CompanyRegistrationNumber");?></span>:</label>
+			<input id="JNrRC" type="text" name="JNrRC"/>		
+		</div>
+		
+		<div class="formRow">
+		<label for="JTVA"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.TVA");?></span>:</label>
+		<select id="JTVA" name="JTVA">
+			<option value="1" selected><?php echo $this->getDictio("Yes");?></option>
+			<option value="0"><?php echo $this->getDictio("No");?></option>
+		</select>
+		</div>
+	
+		<div class="formRow">
+			<label for="JCodFiscal"><span><?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.FiscalCode");?></span>:</label>
+			<input id="JCodFiscal" type="text" name="JCodFiscal"/>		
+		</div>
+	</div>
+</div>
+
+<div class="formRow info">
+    <div class="alert alert-info msg" id="msgRegisterForm">
+        <i class="fa fa-exclamation-circle"></i> <?php echo $this->getDictio("myAccount.NewAccount.TabCompanyData.Information2");?>
+    </div>
+</div>
+
+<div class="formRow">
+    <label>&nbsp;</label>
+    <input type="button" value="<?php echo $this->getDictio("myAccount.NewAccount.PreviousStep");?>" class="previousButton" id="previousButtonInfo2" />
+    <input type="submit" value="<?php echo $this->getDictio("myAccount.NewAccount.Submit");?>" class="nextButton" id="submitButtonInfo" />
+</div>

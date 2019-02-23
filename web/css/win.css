@@ -1,0 +1,143 @@
+/*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;text-align:left;font-family:inherit;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+body {font:11px Arial;background:url(../images/win/bg.png);padding:20px;}*/
+.modal input {vertical-align:middle;*padding-top:10px;}
+.modal label {vertical-align:middle;}
+.modal,.modal span {font-weight:400;}
+.modal h1 {margin:0 0 20px 0;font-size:21px;}
+.modal fieldset {margin:0;}
+
+ul.modal li img,ul.modal > li > label  {
+	cursor:pointer;
+	color:#0099cc;
+}
+.modal li > label {/*border-bottom:1px dashed #ccc;display:inline-block;*/}
+.modal span.trigger {display:none;}
+.modal,.modal > li {display:inline;}
+ul.modal li input[name^=modals] {display:none;}
+ul.modal li input:checked + .overlay {display:table;}
+.modal .overlay {
+	width:100%;
+	/*height:100%;*/
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	z-index:9999;
+	background:rgb(11,33,55);
+	background:rgba(11,33,55,0.5);
+	
+	padding:0;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.modal .overlay > label {
+	/*display:table-cell;*/
+	display: block;
+	vertical-align:middle;
+	/*height:100%;*/
+	padding-bottom:30px;
+	width:auto !important;
+	position:relative;
+	z-index:9;
+}/*
+.modal .overlay img,.overlay iframe {
+	display:inline;
+	border:none;
+	padding:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	background:#ffffff;
+}*/
+.modal .overlay .content {
+	display:block;
+	width:360px;
+	padding:30px 35px 20px;
+	background:#fff;
+	color:#000;
+	margin: 20px auto 0;
+	text-align:left;
+	cursor:auto;
+	position:relative;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-moz-box-shadow: 1px 1px 6px #555;
+	-webkit-box-shadow: 1px 1px 6px #555;
+	box-shadow: 1px 1px 6px #555;
+	float: none;
+	overflow:visible;
+}
+.modal.loading .overlay .content {
+	background:#fff url(../images/win/loader.gif) center center no-repeat;
+}
+.modal .content .inner_content {
+	background:#fff;
+	display:block;
+	/*height:200px;*/
+	/*overflow-y:auto;*/
+	overflow:hidden;
+	/*padding-right:10px;
+	padding-bottom:15px;*/
+	font-size:13px;
+}
+
+.alert .content {width:420px;}
+.alert .content .inner_content {height:100px;}
+
+/*.modal .content .inner_content span {display:block;margin-bottom:12px;font-size:12px;}
+.modal .content img:first-child {float:left;display:block;margin:0 10px 0 0;}
+.modal .content img {float:right;margin:0 10px;padding:0;}*/
+.modal #close {display:none;}
+.modal .closebutton label {
+	/*font-size:15px;
+	background:#925bba;
+	color:#FFFFFF;*/
+	cursor:pointer;
+	/*height:20px;
+	line-height:18px;
+	overflow:hidden;*/
+	position:absolute;
+	right:-12px;
+	text-align:center;
+	top:-12px;
+	/*width:20px;
+	font-weight:bold;
+	border:2px solid #fff;
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
+	border-radius:12px;
+	-moz-box-shadow: 1px 3px 6px #333;
+	-webkit-box-shadow: 1px 3px 6px #333;
+	box-shadow: 1px 3px 6px #333;*/
+	display:block;
+	margin-right:-7px;
+	border:none !important;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:39px !important;
+	height:39px;
+	background:url(../images/win/close.png) no-repeat !important;
+}
+.modal .closebutton:hover label {
+	background:#318DF2;
+}
+.modal .btnCt {margin:10px 0;height:1px;overflow:visible;position:relative;}
+.modal .content br 
+{
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+	overflow:hidden;
+}
+.inner_content .full-width {width:96%;}
+.inline {display:inline-block;}
+.move-arrows{display:inline-block; width:90px;height:147px;vertical-align:bottom; text-align:center;}
+.overlayContainer .btn_get_started {display:block; width:147px; height:35px; padding:0; background:url(../../../images_en/welcome_slide/btn_get_started.png) no-repeat center top; text-indent:-99999px;position:absolute;top:272px;margin-left:51px;*margin-left:-743px;cursor:pointer !important;}
+.overlayContainer.welcomeContainer h2 {z-index:10001; position:absolute; color:#a995c7; font-size:16px;}
+
+.modal form form li, form label, form, .bottom-round li{
+	color: #333 !important;
+}

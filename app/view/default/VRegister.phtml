@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<?php
+	include_once("box/header.phtml");
+?>
+</head>
+<body id="<?php echo $this->cname;?>">
+<?php
+	include_once 'box/top_nav.phtml';
+?>
+<div class="mainCt">
+	<div class="content">
+
+
+		<form action="<?php echo $this->request;?>save" method="post" id="RegisterForm" name="RegisterForm">
+			<h1>registerFormTitle</h1><hr>
+			<div class="col1">
+				<label for="Name"><span>Nume Client</span>:</label>
+				<input type="text" class="register-text-box" name="Name" id="Name">
+				<br>
+				<label for="SocialCUI"><span>CUI</span>:</label>
+				<input type="text" class="register-text-box" name="SocialCUI" id="SocialCUI">
+				<br>
+				<label for="SocialNoCommerce"><span>Nr. Reg. Com.</span>:</label>
+				<input type="text" class="register-text-box" name="SocialNoCommerce" id="SocialNoCommerce">
+
+				<hr>
+
+				<h2>Adresa:</h2>
+				<label for="CountyID"><span>Judet</span>:</label>
+				<select onchange="MyAccount.loadCities($(this).attr('value'), 'CityID')" class="register-text-box" id="CountyID" name="CountyID">
+					<option value="null">Alege Un Judet</option>
+				</select>
+				<br>
+				<label for="CityID"><span>Oras</span>:</label>
+				<select class="register-text-box" id="CityID" name="CityID">
+					<option value="null">Trebuie sa alegi un judet</option>
+				</select><br>
+
+				<label for="Street"><span>Strada</span>:</label>
+				<input type="text" class="register-text-box" name="Street" id="Street">
+				<br>
+
+				<label for="StreetNo"><span class="x-hidden">Numarul strazii</span>Nr.: </label>
+				<input type="text" class="register-text-box" name="StreetNo" id="StreetNo">
+				<br>
+				<label for="ZipCode"><span>Cod Postal</span>:</label>
+				<input type="text" class="register-text-box" name="ZipCode" id="ZipCode">
+				<br>
+
+				<hr>
+				<h1>[userInfoTitle]</h1>
+
+				<div class="col1">
+					<label for="FirstName"><span>Prenume</span>:</label>
+					<input type="text" class="register-text-box" id="FirstName" name="FirstName">
+				</div>
+				<div class="col1">
+					<label for="LastName"><span>Nume</span>:</label>
+					<input type="text" class="register-text-box" id="LastName" name="LastName">
+				</div>
+				<div class="col1">
+					<label for="Email"><span>E-Mail</span>:</label>
+					<input type="text" class="register-text-box" autocomplete="off" id="Email" name="Email">
+				</div>
+				<div class="col1">
+					<label for="Password"><span>Parola</span>:</label>
+					<input type="Password" class="register-text-box" autocomplete="off" id="Password" name="Password">
+				</div>
+				<div class="col1">
+					<label for="VerifyPassword"><span>Verificare Parola</span>:</label>
+					<input type="password" class="register-text-box" autocomplete="off" id="VerifyPassword" name="VerifyPassword">
+				</div>
+
+				<div class="col1 txt_center">
+					<input type="checkbox" name="TermsCheck" id="TermsCheck">
+					<label for="RermsCheck" class="checkbox">Sunt de acord cu </label>
+					<a onclick="MyAccount.showTerms();" href="javascript:;">termenii si conditiile in vigoare.</a>
+				</div>
+
+				<div class="col1 txt_center">
+					<input type="submit" value="[Register]" id="registerCompanyButton">
+				</div>
+				<div class="col1">
+					<div id="msgRegisterForm" class="msg">Campurile marcate cu (*) sunt obligatorii.</div>
+				</div>
+				<div class="col1 txt_center">
+					<a href="http://pmweb.extjs.ro/autentificare.html">Login</a> |
+					<a href="http://pmweb.extjs.ro/resetare-parola.html">Recuperare Parola</a>
+				</div>
+
+				<br class="clear">
+			</div>
+		</form>
+
+
+	</div>
+</div>
+<?php
+	include_once("box/footer.phtml");
+?>
+</body>
+</html>

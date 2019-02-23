@@ -1,0 +1,7 @@
+AddType text/x-component .htc
+
+RewriteEngine on
+
+RewriteRule ^(en|fr)/([a-z]*) /index.php
+RewriteRule !\.(js|ico|gif|jpg|jpeg|png|css|swf|htm|xml|php)$ index.php 
+RewriteRule ^(form|ajax|captcha)/([a-z]*) /index.php

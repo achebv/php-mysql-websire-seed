@@ -1,0 +1,83 @@
+/**
+    custom skin
+*/
+
+.header{
+    background: -moz-linear-gradient(center top , #FAFAFA, #F5F5F5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #EEEEEE;
+    color: #444444;
+    padding: 14px 15px 13px;
+}
+
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mainCt{
+    border-top: 1px solid #ddd;
+    background: -moz-linear-gradient(center top , #F5F5F5, #ffffff) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.rel .logo{
+    width: 140px;
+    height: 41px;
+    display: block;
+}
+
+.rel .user_box{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.nav{
+    background: none repeat scroll 0 0 #F9F9F9;
+}
+
+.nav .content{
+    padding: 10px 0px;
+    min-height: 70px;
+}
+
+.nav ul{
+    display: block;
+}
+
+.nav ul li {
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.nav ul li a{
+    background: url("images/menu_bg.png") transparent 0 0 no-repeat;
+    display: block;
+    height: 161px;
+    width: 164px;
+    position: relative;
+}
+
+.nav ul li a:hover,
+.nav ul li.active a{
+    background: url("images/menu_bg.png") transparent -167px 0px no-repeat;
+}
+
+
+/** jqwidgets */
+#loginArea{margin: 30px auto 0px;}
+.login-table{margin: 10px;}
+.login-table td,
+.login-table tr {
+    margin: 0px;
+    padding: 2px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+h3{display: inline-block;margin: 0px;}
+.text-input
+{
+    height: 21px;
+    width: 230px;
+}
